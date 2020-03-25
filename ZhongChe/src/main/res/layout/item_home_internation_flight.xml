@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/CFFFFFF"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_journey_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle_cc70019_r_15"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/D5"
+        android:paddingTop="@dimen/D4"
+        android:paddingRight="@dimen/D9"
+        android:paddingBottom="@dimen/D4"
+        android:textColor="@color/CFFFFFF"
+        android:textSize="@dimen/common_textsize_11"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_city"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ll_city"
+        tools:text="1程" />
+
+    <LinearLayout
+        android:id="@+id/ll_city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/D19"
+        android:layout_marginRight="@dimen/D17"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toRightOf="@+id/tv_journey_count"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.crcc.commonlib.view.AutoScaleTextView
+            android:id="@+id/tv_from_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/layer_list_bottom_line_ce8e8e8"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:hint="出发城市"
+            android:singleLine="true"
+            android:paddingTop="@dimen/D16"
+            android:paddingBottom="@dimen/D16"
+            android:textColor="@color/C333333"
+            android:textColorHint="@color/CBBBBBB"
+            android:textSize="@dimen/common_textsize_14"
+            sy:minTextSize="@dimen/common_textsize_11"
+            tools:text="杭州" />
+
+        <ImageView
+            android:id="@+id/iv_journey_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/D8"
+            android:layout_marginRight="@dimen/D8"
+            android:src="@mipmap/icon_journey_exchange" />
+
+
+        <com.crcc.commonlib.view.AutoScaleTextView
+            android:id="@+id/tv_to_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:background="@drawable/layer_list_bottom_line_ce8e8e8"
+            android:gravity="right|center_vertical"
+            android:hint="到达城市"
+            android:singleLine="true"
+            android:paddingTop="@dimen/D16"
+            android:paddingBottom="@dimen/D16"
+            android:textColor="@color/C333333"
+            android:textColorHint="@color/CBBBBBB"
+            android:textSize="@dimen/common_textsize_14"
+            sy:minTextSize="@dimen/common_textsize_11"
+            tools:text="澳门" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layer_list_bottom_line_ce8e8e8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="@+id/ll_city"
+        app:layout_constraintRight_toRightOf="@+id/ll_city"
+        app:layout_constraintTop_toBottomOf="@+id/ll_city">
+
+
+        <LinearLayout
+            android:id="@+id/ll_journey_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_journey_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="出发日期"
+                android:paddingTop="@dimen/D16"
+                android:paddingBottom="@dimen/D16"
+                android:textColor="@color/C333333"
+                android:textColorHint="@color/CBBBBBB"
+                android:textSize="@dimen/common_textsize_14"
+                tools:text="2019-5-23" />
+
+            <TextView
+                android:id="@+id/tv_journey_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/D8"
+                android:paddingTop="@dimen/D16"
+                android:paddingBottom="@dimen/D16"
+                android:textColor="@color/C888888"
+                android:textSize="@dimen/common_textsize_14"
+                tools:text="123" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/D16"
+            android:paddingTop="@dimen/D16"
+            android:paddingBottom="@dimen/D16"
+            android:src="@mipmap/icon_close" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

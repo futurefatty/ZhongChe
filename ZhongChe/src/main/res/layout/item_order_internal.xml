@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_light_gray"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_line"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/item_order_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="采购订单"
+            android:textColor="@color/mine_item_color" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="乘机人："
+                android:textColor="@color/mine_item_color" />
+
+            <TextView
+                android:id="@+id/item_passenger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="张三"
+                android:textColor="@color/mine_item_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_order_internal_center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_line"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/item_internal_flight_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/mine_item_color"
+            android:textSize="@dimen/size14sp" />
+
+        <RelativeLayout
+            android:id="@+id/item_internal_line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_internal_flight_info"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_fromCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/mine_item_color"
+                android:textSize="@dimen/size14sp" />
+
+            <ImageView
+                android:id="@+id/icon_arrow_toRight"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/item_fromCity"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_arrow_oneway_darkgray" />
+
+            <TextView
+                android:id="@+id/item_toCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/icon_arrow_toRight"
+                android:textColor="@color/mine_item_color"
+                android:textSize="@dimen/size14sp" />
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/size14sp" />
+        </RelativeLayout>
+
+        <!-- 以上为第一行，以下为第二行 -->
+        <TextView
+            android:id="@+id/item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_internal_line1"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/size12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/item_plan_from_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_time"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/size12sp" />
+
+        <TextView
+            android:id="@+id/item_plan_to_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_plan_from_time"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/size12sp" />
+
+        <TextView
+            android:id="@+id/item_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_internal_line1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/size12sp"
+            android:visibility="gone" />
+
+        <!-- 以下为第三行 -->
+        <TextView
+            android:id="@+id/item_flight_corporation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_plan_to_time"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/size12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/item_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_reason"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/size12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_flight_corporation"
+            android:padding="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预订申请单号："
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/size12sp" />
+
+            <TextView
+                android:id="@+id/item_apply_order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/light_gray"
+                android:textSize="@dimen/size12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titleBarColorWhite"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/item_btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/cancel_btn_border"
+            android:paddingLeft="@dimen/btn_cancel_paddingH"
+            android:paddingTop="@dimen/btn_cancel_paddingV"
+            android:paddingRight="@dimen/btn_cancel_paddingH"
+            android:paddingBottom="@dimen/btn_cancel_paddingV"
+            android:text="删除"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/size12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/item_btn_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/cancel_btn_border"
+            android:paddingLeft="@dimen/btn_cancel_paddingH"
+            android:paddingTop="@dimen/btn_cancel_paddingV"
+            android:paddingRight="@dimen/btn_cancel_paddingH"
+            android:paddingBottom="@dimen/btn_cancel_paddingV"
+            android:text="待支付"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/size12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/item_btn_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/cancel_btn_border"
+            android:paddingLeft="@dimen/btn_cancel_paddingH"
+            android:paddingTop="@dimen/btn_cancel_paddingV"
+            android:paddingRight="@dimen/btn_cancel_paddingH"
+            android:paddingBottom="@dimen/btn_cancel_paddingV"
+            android:text="改签"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/size12sp" />
+
+        <TextView
+            android:id="@+id/item_btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/cancel_btn_border"
+            android:paddingLeft="@dimen/btn_cancel_paddingH"
+            android:paddingTop="@dimen/btn_cancel_paddingV"
+            android:paddingRight="@dimen/btn_cancel_paddingH"
+            android:paddingBottom="@dimen/btn_cancel_paddingV"
+            android:text="退票"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/size12sp" />
+
+        <TextView
+            android:id="@+id/item_btn_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/cancel_btn_border"
+            android:paddingLeft="@dimen/btn_cancel_paddingH"
+            android:paddingTop="@dimen/btn_cancel_paddingV"
+            android:paddingRight="@dimen/btn_cancel_paddingH"
+            android:paddingBottom="@dimen/btn_cancel_paddingV"
+            android:text="评价"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/size12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_pay_out_time_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titleBarColorWhite"
+        android:padding="10dp"
+        android:textColor="#c70019"
+        android:textSize="12sp"
+        android:visibility="visible"
+        tools:text="支付有效期24小时，请及时支付避免订单失效！" />
+</LinearLayout>

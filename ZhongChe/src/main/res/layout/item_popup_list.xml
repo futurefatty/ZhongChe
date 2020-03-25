@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/titleBarColorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/item_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/icon_check"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/btn_singleselection_nor" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ipd_pro_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/ipd_projName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/ipd_pmCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="5dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ipd_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/C999999"
+        android:padding="8dp"
+        android:visibility="gone" />
+</LinearLayout>

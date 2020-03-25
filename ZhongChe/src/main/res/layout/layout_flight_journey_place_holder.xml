@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CFFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_query_journey_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/D128"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/D6"
+        android:text="亲，没有查询到您要的航班\n本行程没有可提交供应商的参考信息"
+        android:textColor="@color/C666666"
+        android:textSize="@dimen/common_textsize_12" />
+
+    <TextView
+        android:id="@+id/tv_continue_query_next_journey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/D20"
+        android:background="@drawable/shape_rectangle_cc70019_r2"
+        android:paddingLeft="@dimen/D22"
+        android:paddingTop="@dimen/D12"
+        android:paddingRight="@dimen/D22"
+        android:paddingBottom="@dimen/D12"
+        android:text="继续查询下一行程"
+        android:textColor="@color/CFFFFFF"
+        android:textSize="@dimen/common_textsize_12" />
+</LinearLayout>

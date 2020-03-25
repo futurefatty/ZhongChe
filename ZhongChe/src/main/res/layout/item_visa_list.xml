@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <View
+            android:id="@+id/red_line_left"
+            android:layout_width="2dp"
+            android:layout_height="14dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorAccent"/>
+        <TextView
+            android:id="@+id/item_continent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/red_line_left"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/size14sp"/>
+        <ImageView
+            android:layout_width="@dimen/icon_arrow_right_W"
+            android:layout_height="@dimen/icon_arrow_right_H"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_arrow_gray"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/divider_line_color"/>
+
+    <com.neusoft.zcapplication.widget.DefinedGridView
+        android:id="@+id/visa_country_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:verticalSpacing="10dp"/>
+</LinearLayout>

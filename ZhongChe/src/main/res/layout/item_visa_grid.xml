@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+    <com.neusoft.zcapplication.widget.CircleImageView
+        android:id="@+id/item_country_icon"
+        app:border_color="#fff"
+        app:border_width="0dp"
+        android:layout_width="@dimen/icon_head_size"
+        android:layout_height="@dimen/icon_head_size"
+        android:src="@mipmap/pic_edit_headpicture"/>
+    <TextView
+        android:id="@+id/item_country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size14sp"
+        android:textColor="#666666"
+        android:padding="5dp"
+        android:includeFontPadding="false"/>
+</LinearLayout>

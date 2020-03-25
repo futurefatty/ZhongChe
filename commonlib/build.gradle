@@ -1,0 +1,72 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    api rootProject.ext.dependencies["support-v4"]
+    api rootProject.ext.dependencies["appcompat-v7"]
+    api rootProject.ext.dependencies["constraint"]
+    api(rootProject.ext.dependencies["design"]) {
+        exclude module: 'support-v4'
+        exclude module: 'appcompat-v7'
+        exclude module: 'recyclerview-v7'
+    }
+    api rootProject.ext.dependencies["multidex"]
+    api(rootProject.ext.dependencies["logger"]) {
+        exclude group: 'com.android.support'
+    }
+    api rootProject.ext.dependencies["retrofit"]
+    api(rootProject.ext.dependencies["converter-gson"]) {
+        exclude group: 'com.google.code.gson'
+        exclude group: 'com.squareup.retrofit2'
+    }
+    api(rootProject.ext.dependencies["converter-scalars"]) {
+        exclude group: 'com.squareup.retrofit2'
+    }
+    api rootProject.ext.dependencies["gson"]
+    api rootProject.ext.dependencies["rxjava"]
+    api(rootProject.ext.dependencies["rxandroid"]) {
+        exclude group: 'io.reactivex.rxjava2'
+    }
+    api rootProject.ext.dependencies["eventbus"]
+
+    api(rootProject.ext.dependencies["rxpermissions"]) {
+        exclude group: 'io.reactivex.rxjava2'
+        exclude group: 'com.android.support'
+    }
+    api rootProject.ext.dependencies["MagicIndicator"]
+    api rootProject.ext.dependencies["BaseRecyclerViewAdapterHelper"]
+    api rootProject.ext.dependencies["recyclerview-v7"]
+    api rootProject.ext.dependencies["agentweb"]
+    api(rootProject.ext.dependencies["loadSir"]) {
+        exclude module: 'annotations'
+    }
+    api(rootProject.ext.dependencies["butterknife"]) {
+        exclude module: 'support-annotations'
+        exclude module: 'appcompat-v7'
+        exclude module: 'compat'
+    }
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+}

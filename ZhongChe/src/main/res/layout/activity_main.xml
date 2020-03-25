@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="-29dp"
+            android:src="@mipmap/bg_tab"/>
+
+        <RadioGroup
+            android:id="@+id/home_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/border_navbar_top"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:paddingTop="4dp">
+
+            <com.neusoft.zcapplication.widget.NavBarRadioButton
+                android:id="@+id/main_nav_home"
+                style="@style/Main_Tab_Style"
+                android:checked="true"
+                android:text="@string/main_tab_home"
+                android:textSize="@dimen/size30px"
+                app:drawableSize="@dimen/tab_img_size"
+                app:drawableTop="@drawable/selector_main_tab_home" />
+
+            <com.neusoft.zcapplication.widget.NavBarRadioButton
+                android:id="@+id/main_nav_approval"
+                style="@style/Main_Tab_Style"
+                android:text="@string/main_tab_approval"
+                android:textSize="@dimen/size30px"
+                app:drawableSize="@dimen/tab_img_size"/>
+
+            <!--<com.neusoft.zcapplication.widget.NavBarRadioButton
+               android:id="@+id/main_nav_world"
+                style="@style/Main_Tab_Style"
+                app:drawableTop="@drawable/selector_main_tab_dynamic"
+                android:text="@string/main_tab_world"
+                android:textSize="@dimen/size30px"
+                app:drawableSize="@dimen/tab_img_size" />-->
+
+            <com.neusoft.zcapplication.widget.NavBarRadioButton
+                android:id="@+id/main_nav_mine"
+                style="@style/Main_Tab_Style"
+                android:text="@string/main_tab_mine"
+                android:textSize="@dimen/size30px"
+                app:drawableSize="@dimen/tab_img_size"
+                app:drawableTop="@drawable/selector_main_tab_mine" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/act_main_mine_point"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_gravity="right|top"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/nav_bar_point"
+                    android:visibility="visible"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/main_nav_approval_img"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="27dp"
+            android:src="@drawable/icon_application_nor"/>
+    </FrameLayout>
+
+</LinearLayout>

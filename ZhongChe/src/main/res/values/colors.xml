@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#C70019</color>
+    <color name="colorPrimaryDark">#c70019</color>
+    <color name="colorAccent">#c70019</color>
+    <color name="tab_line_color">#c70019</color>
+    <color name="lineColor">#ffffff</color>
+    <color name="titleBarColor">#ffffff</color>
+    <color name="titleTextColor">#333333</color>
+
+    <color name="NormalTextColor">#333333</color>
+    <color name="WeakDarkTextColor">#888888</color>
+    <color name="WeakTextColor">#FFB2B1B3</color>
+    <color name="HintTextColor">#B2B1B3</color>
+    <color name="WhiteColor">#FFFFFF</color>
+    <color name="LineColor">#50B2B1B3</color>
+    <color name="RedColor">#c70019</color>
+    <color name="GrayColor">#B2B1B3</color>
+    <color name="RedDrakColor">#B70E23</color>
+
+    <color name="edit_text_color">#666666</color>
+
+    <color name="tab_unpressed">#999999</color>
+    <color name="dark_gray">#666666</color>
+    <color name="light_gray">#999999</color>
+    <color name="hint_text_color">#bbbbbb</color>
+
+    <color name="bg_light_gray">#f8f8f8</color>
+    <color name="bg_search">#e8e8e8</color>
+
+    <color name="title_text">#ffffff</color>
+    <color name="titleBarColorWhite">#ffffff</color>
+
+    <color name="mine_item_color">#333333</color>
+    <color name="visa_bg">#6da1ef</color>
+
+    <color name="light_blue">#3fadff</color>
+    <color name="light_green">#32c47c</color>
+
+    <!-- 分割线 -->
+    <color name="divider_line_color">#e8e8e8</color>
+
+    <!-- 搜索框字体 -->
+    <color name="search_text_color">#bbbbbb</color>
+    <color name="whiteText">#ffffff</color>
+
+    <color name="type_tab_checked">#ffffff</color>
+    <color name="type_tab_unchecked">#333333</color>
+    <color name="color3">#333333</color>
+    <color name="color6">#666666</color>
+
+    <color name="colorFC8D52">#FC8D52</color>
+    <color name="color48CFAE">#48CFAE</color>
+    <color name="colorEC87BF">#EC87BF</color>
+    <color name="colorFF4040">#FF4040</color>
+    <color name="colorCDB79E">#CDB79E</color>
+
+    <color name="colorBorder">#ABABAB</color>
+    <color name="colorTitle">#999999</color>
+
+    <!--<color name="colorOdd">#EEEEEE</color>
+    <color name="colorEven">#EECBAD</color>-->
+    <color name="colorOdd">#ffffff</color>
+    <color name="colorEven">#ffffff</color>
+    <color name="colorBgExcel">#00A7E8</color>
+    <color name="colorBgExcelBlue">#00A7E8</color>
+    <color name="colorBgExcelGreen">#94D33F</color>
+    <color name="colorBgExcelRed">#FF8392</color>
+
+    <color name="colorFontBlue">#3EAEF9</color>
+    <color name="blankSeparatorColor">#F0F0F0</color>
+    <color name="CE8E8E8">#E8E8E8</color>
+    <color name="bg_color">#EEEEEE</color>
+    <color name="CB2B2B2">#B2B2B2</color>
+</resources>

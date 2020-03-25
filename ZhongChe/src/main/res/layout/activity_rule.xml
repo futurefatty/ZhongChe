@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/frg_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_light_gray"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent">
+            <LinearLayout
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/horizontal_margin">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_white_back"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="差旅标准"
+                android:textColor="@color/title_text"
+                android:textSize="@dimen/size16sp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_top_bottom"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="员工层级"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/size12sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11"
+                    android:background="@drawable/line_around"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="管理标准"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/size12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#e8e8e8"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/borderWidth">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="城市间交通工具"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/size12sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/borderWidth"
+                            android:layout_weight="2"
+                            android:background="#ffffff"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="限额标准或包干标准（含税）"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/size12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e8e8e8"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/borderWidth">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/rule_employee_level1"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/size12sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/borderWidth"
+                    android:layout_marginRight="@dimen/borderWidth"
+                    android:layout_weight="11"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="#ffffff"
+                        android:gravity="left|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/rule_trip_type1"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/size12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/borderWidth"
+                        android:layout_weight="2"
+                        android:background="#ffffff"
+                        android:gravity="left|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/rule_hotel_level1"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/size12sp" />
+                </LinearLayout>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e8e8e8"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/borderWidth">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/rule_employee_level2"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/size12sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/borderWidth"
+                    android:layout_marginRight="@dimen/borderWidth"
+                    android:layout_weight="11"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="#ffffff"
+                        android:gravity="left|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/rule_trip_type2"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/size12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/borderWidth"
+                        android:layout_weight="2"
+                        android:background="#ffffff"
+                        android:gravity="left|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/rule_hotel_level2"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/size12sp" />
+                </LinearLayout>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e8e8e8"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/borderWidth">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/rule_employee_level3"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/size12sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/borderWidth"
+                    android:layout_marginRight="@dimen/borderWidth"
+                    android:layout_weight="11"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="#ffffff"
+                        android:gravity="left|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/rule_trip_type3"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/size12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/borderWidth"
+                        android:layout_weight="2"
+                        android:background="#ffffff"
+                        android:gravity="left|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/rule_hotel_level3"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/size12sp" />
+                </LinearLayout>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e8e8e8"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/borderWidth">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/rule_employee_level4"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/size12sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/borderWidth"
+                    android:layout_marginRight="@dimen/borderWidth"
+                    android:layout_weight="11"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="#ffffff"
+                        android:gravity="left|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/rule_trip_type4"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/size12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/borderWidth"
+                        android:layout_weight="2"
+                        android:background="#ffffff"
+                        android:gravity="left|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/rule_hotel_level4"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/size12sp" />
+                </LinearLayout>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e8e8e8"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/borderWidth">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/rule_employee_level5"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/size12sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/borderWidth"
+                    android:layout_marginRight="@dimen/borderWidth"
+                    android:layout_weight="11"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="#ffffff"
+                        android:gravity="left|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/rule_trip_type5"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/size12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/borderWidth"
+                        android:layout_weight="2"
+                        android:background="#ffffff"
+                        android:gravity="left|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/rule_hotel_level5"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/size12sp" />
+                </LinearLayout>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e8e8e8"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/borderWidth">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/rule_employee_level6"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/size12sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/borderWidth"
+                    android:layout_marginRight="@dimen/borderWidth"
+                    android:layout_weight="11"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="#ffffff"
+                        android:gravity="left|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/rule_trip_type6"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/size12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/borderWidth"
+                        android:layout_weight="2"
+                        android:background="#ffffff"
+                        android:gravity="left|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/rule_hotel_level5"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/size12sp" />
+                </LinearLayout>
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorAccent">
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteText"
+            android:text="取消"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/whiteText"/>
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteText"
+            android:text="确定"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="@drawable/divider_line">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="订单类型"
+            android:background="@drawable/divider_line_right"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="时间"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:background="@drawable/divider_line">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/divider_line_right">
+            <RadioGroup
+                android:id="@+id/radioG_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <com.neusoft.zcapplication.widget.NavBarRadioButton
+                    android:id="@+id/radio_order1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:button="@null"
+                    android:text=" 采购订单"
+                    android:textSize="@dimen/size14sp"
+                    android:textColor="@color/mine_item_color"
+                    android:checked="false"
+                    app:drawableLeft="@drawable/selector_radio_btn"
+                    app:drawableSize="18dp" />
+                <com.neusoft.zcapplication.widget.NavBarRadioButton
+                    android:id="@+id/radio_order2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:button="@null"
+                    android:text=" 改签订单"
+                    android:textSize="@dimen/size14sp"
+                    android:textColor="@color/mine_item_color"
+                    android:checked="false"
+                    app:drawableLeft="@drawable/selector_radio_btn"
+                    app:drawableSize="18dp" />
+                <com.neusoft.zcapplication.widget.NavBarRadioButton
+                    android:id="@+id/radio_order3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:button="@null"
+                    android:text=" 退订订单"
+                    android:textSize="@dimen/size14sp"
+                    android:textColor="@color/mine_item_color"
+                    android:checked="false"
+                    app:drawableLeft="@drawable/selector_radio_btn"
+                    app:drawableSize="18dp" />
+                <com.neusoft.zcapplication.widget.NavBarRadioButton
+                    android:id="@+id/radio_order0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:button="@null"
+                    android:text=" 全部数据"
+                    android:textSize="@dimen/size14sp"
+                    android:textColor="@color/mine_item_color"
+                    android:checked="false"
+                    app:drawableLeft="@drawable/selector_radio_btn"
+                    app:drawableSize="18dp" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+            <RadioGroup
+                android:id="@+id/radioG_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.neusoft.zcapplication.widget.NavBarRadioButton
+                    android:id="@+id/radio_time0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:button="@null"
+                    android:text=" 一个月内"
+                    android:textSize="@dimen/size14sp"
+                    android:textColor="@color/mine_item_color"
+                    android:checked="false"
+                    app:drawableLeft="@drawable/selector_radio_btn"
+                    app:drawableSize="18dp" />
+                <com.neusoft.zcapplication.widget.NavBarRadioButton
+                    android:id="@+id/radio_time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:button="@null"
+                    android:text=" 三个月内"
+                    android:textSize="@dimen/size14sp"
+                    android:textColor="@color/mine_item_color"
+                    android:checked="false"
+                    app:drawableLeft="@drawable/selector_radio_btn"
+                    app:drawableSize="18dp" />
+                <com.neusoft.zcapplication.widget.NavBarRadioButton
+                    android:id="@+id/radio_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:button="@null"
+                    android:text=" 半年内"
+                    android:textSize="@dimen/size14sp"
+                    android:textColor="@color/mine_item_color"
+                    android:checked="false"
+                    app:drawableLeft="@drawable/selector_radio_btn"
+                    app:drawableSize="18dp" />
+                <com.neusoft.zcapplication.widget.NavBarRadioButton
+                    android:id="@+id/radio_time3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:button="@null"
+                    android:text=" 一年内"
+                    android:textSize="@dimen/size14sp"
+                    android:textColor="@color/mine_item_color"
+                    android:checked="false"
+                    app:drawableLeft="@drawable/selector_radio_btn"
+                    app:drawableSize="18dp" />
+                <com.neusoft.zcapplication.widget.NavBarRadioButton
+                    android:id="@+id/radio_time4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:button="@null"
+                    android:text=" 三年内"
+                    android:textSize="@dimen/size14sp"
+                    android:textColor="@color/mine_item_color"
+                    android:checked="false"
+                    app:drawableLeft="@drawable/selector_radio_btn"
+                    app:drawableSize="18dp" />
+                <com.neusoft.zcapplication.widget.NavBarRadioButton
+                    android:id="@+id/radio_time5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:button="@null"
+                    android:text=" 全部数据"
+                    android:textSize="@dimen/size14sp"
+                    android:textColor="@color/mine_item_color"
+                    android:checked="false"
+                    app:drawableLeft="@drawable/selector_radio_btn"
+                    app:drawableSize="18dp" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

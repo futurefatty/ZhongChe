@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="20dp"
+        android:background="@drawable/alert_bg_shape"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alert_msg_shape"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/alert_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/size16sp"
+                android:textColor="@color/mine_item_color"/>
+
+            <TextView
+                android:id="@+id/alert_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="5dp"
+            android:background="@color/divider_line_color"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/alert_bottom_shape"
+            android:gravity="bottom|center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/alert_negativebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_shape_exit_btn"
+                android:paddingLeft="@dimen/btn_add_paddingH"
+                android:paddingRight="@dimen/btn_add_paddingH"
+                android:paddingTop="@dimen/btn_add_paddingV"
+                android:paddingBottom="@dimen/btn_add_paddingV"
+                android:text="确定"
+                android:textColor="@color/whiteText"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:id="@+id/alert_center_line"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:visibility="gone"></LinearLayout>
+            <Button
+                android:id="@+id/alert_positivebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/bg_white_red"
+                android:paddingLeft="@dimen/btn_add_paddingH"
+                android:paddingRight="@dimen/btn_add_paddingH"
+                android:paddingTop="@dimen/btn_add_paddingV"
+                android:paddingBottom="@dimen/btn_add_paddingV"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

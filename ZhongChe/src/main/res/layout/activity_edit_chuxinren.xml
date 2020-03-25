@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/frg_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/ly_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+        <LinearLayout
+            android:id="@+id/btn_personal_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/horizontal_margin">
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="@color/whiteText" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="编辑出行人"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/size16sp" />
+
+        <LinearLayout
+            android:id="@+id/btn_personal_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/horizontal_margin">
+
+            <TextView
+                android:id="@+id/btn_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/save_btn_marginTop"
+                android:text="完成"
+                android:textColor="@color/title_text"
+                android:textSize="@dimen/size14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titleBarColorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:textColor="@color/mine_item_color"
+            android:textSize="@dimen/size14sp" />
+
+        <TextView
+            android:id="@+id/tv_person"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="邓小等"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/size14sp" />
+
+        <ImageView
+            android:layout_width="@dimen/icon_arrow_right_W"
+            android:layout_height="@dimen/icon_arrow_right_H"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/btn_arrow_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titleBarColorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="证件类型"
+            android:textColor="@color/mine_item_color"
+            android:textSize="@dimen/size14sp" />
+
+        <TextView
+            android:id="@+id/act_edit_trip_person_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="选择证件类型"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/size14sp" />
+
+        <ImageView
+            android:layout_width="@dimen/icon_arrow_right_W"
+            android:layout_height="@dimen/icon_arrow_right_H"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/btn_arrow_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titleBarColorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="核算主体"
+            android:textColor="@color/mine_item_color"
+            android:textSize="@dimen/size14sp" />
+
+        <TextView
+            android:id="@+id/tv_accountEntity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="选择核算主体"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/size14sp" />
+
+        <ImageView
+            android:layout_width="@dimen/icon_arrow_right_W"
+            android:layout_height="@dimen/icon_arrow_right_H"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/btn_arrow_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titleBarColorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="部门"
+            android:textColor="@color/mine_item_color"
+            android:textSize="@dimen/size14sp" />
+
+        <TextView
+            android:id="@+id/tv_depart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="选择部门"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/size14sp" />
+
+        <ImageView
+            android:layout_width="@dimen/icon_arrow_right_W"
+            android:layout_height="@dimen/icon_arrow_right_H"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/btn_arrow_gray" />
+    </LinearLayout>
+
+    
+</LinearLayout>

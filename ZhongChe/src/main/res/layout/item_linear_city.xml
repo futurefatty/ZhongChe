@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/D14"
+    android:paddingRight="@dimen/D14">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/D18"
+        android:paddingBottom="@dimen/D18">
+
+        <TextView
+            android:id="@+id/tv_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/C333333"
+            android:textSize="@dimen/common_textsize_13"
+            tools:text="杭州" />
+
+        <TextView
+            android:id="@+id/tv_city_san_zi_ma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/D22"
+            android:textColor="@color/C999999"
+            android:textSize="@dimen/common_textsize_12"
+            tools:text="HZ" />
+
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/D16"
+            android:textColor="@color/C999999"
+            android:textSize="@dimen/common_textsize_12"
+            tools:text="中国" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividerColor" />
+</LinearLayout>

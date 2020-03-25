@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <TextView
+        android:id="@+id/frg_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/horizontal_margin"
+            android:layout_alignParentLeft="true">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_white_back"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/title_text"
+            android:textSize="@dimen/size16sp"
+            android:layout_centerInParent="true"
+            android:text="机票服务"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ticket_service_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#fff"
+        android:dividerHeight="15dp"
+        android:listSelector="@android:color/transparent"
+        android:background="#fff"/>
+</LinearLayout>
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_search_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/D45"
+        android:background="@color/CC70019"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/ll_base_search_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/D14"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rectangle_cf6f6f6_r_15"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/D15"
+                android:layout_height="@dimen/D15"
+                android:layout_marginLeft="@dimen/D12"
+                android:src="@mipmap/icon_search" />
+
+            <com.crcc.commonlib.view.ClearEditText
+                android:id="@+id/et_base_search_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/D9"
+                android:layout_marginRight="@dimen/D9"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableRight="@mipmap/icon_clear"
+                android:drawablePadding="@dimen/D10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="中文/拼音/首字母"
+                android:imeOptions="actionDone"
+                android:paddingTop="@dimen/D9"
+                android:paddingBottom="@dimen/D9"
+                android:singleLine="true"
+                android:textColor="@color/C333333"
+                android:textColorHint="@color/CBBBBBB"
+                android:textSize="@dimen/common_textsize_13" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_search_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:paddingLeft="@dimen/D11"
+            android:paddingRight="@dimen/D11"
+            android:text="取消"
+            android:textColor="@color/CFFFFFF"
+            android:textSize="@dimen/common_textsize_13" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/layout_empty_no_search"
+            layout="@layout/item_linear_city"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_seach_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</LinearLayout>

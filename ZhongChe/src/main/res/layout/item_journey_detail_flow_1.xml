@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.crcc.commonlib.view.DashView
+        android:id="@+id/dash_view_top_placeholder"
+        android:layout_width="@dimen/D2"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view_solid_point_1"
+        app:layout_constraintLeft_toLeftOf="@+id/view_solid_point_1"
+        app:layout_constraintRight_toRightOf="@+id/view_solid_point_1"
+        app:layout_constraintTop_toTopOf="@+id/tv_dep_date"
+        sy:dashOrientation="1"
+        sy:dashWidth="@dimen/D2"
+        sy:lineColor="@color/CE2E2E2"
+        sy:lineHeight="@dimen/D2"
+        sy:lineWidth="@dimen/D2" />
+
+    <TextView
+        android:id="@+id/tv_depart_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/C333333"
+        android:textSize="@dimen/common_textsize_12"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dep_date"
+        tools:text="19:40" />
+
+
+    <TextView
+        android:id="@+id/tv_dep_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/C333333"
+        android:textSize="@dimen/common_textsize_10"
+        app:layout_constraintBottom_toTopOf="@+id/tv_depart_time"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_depart_time"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="05-23" />
+
+    <View
+        android:id="@+id/view_solid_point_1"
+        android:layout_width="@dimen/D9"
+        android:layout_height="@dimen/D9"
+        android:layout_marginStart="@dimen/D20"
+        android:background="@drawable/shape_circle_solid_ce2e2e2_size_9"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_depart_time"
+        app:layout_constraintLeft_toRightOf="@+id/tv_depart_time"
+        app:layout_constraintTop_toTopOf="@+id/tv_depart_time" />
+
+
+
+    <TextView
+        android:id="@+id/tv_depart_airport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/D20"
+        android:textColor="@color/C333333"
+        android:textSize="@dimen/common_textsize_16"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_depart_time"
+        app:layout_constraintLeft_toRightOf="@+id/view_solid_point_1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="萧山国际机场萧山国际机场萧山国际机场萧山国际机场萧山国际机场萧山国际机场萧山国际机场萧山国际机场萧山国际机场萧山国际机场萧山国际机场萧山国际机场萧山国际机场萧山国际机场萧山国际机场萧山国际机场萧山国际机场" />
+
+
+    <TextView
+        android:id="@+id/tv_arrive_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/D25"
+        android:textColor="@color/C333333"
+        android:textSize="@dimen/common_textsize_12"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_depart_time"
+        app:layout_constraintTop_toBottomOf="@+id/ll_journey_detail_flow_middle"
+        tools:text="18:40" />
+
+    <View
+        android:id="@+id/view_solid_point_2"
+        android:layout_width="@dimen/D9"
+        android:layout_height="@dimen/D9"
+        android:layout_marginStart="@dimen/D20"
+        android:background="@drawable/shape_circle_solid_ce2e2e2_size_9"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_arrive_time"
+        app:layout_constraintLeft_toRightOf="@+id/tv_arrive_time"
+        app:layout_constraintTop_toTopOf="@+id/tv_arrive_time" />
+
+    <TextView
+        android:id="@+id/tv_arrive_airport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/D20"
+        android:textColor="@color/C333333"
+        android:textSize="@dimen/common_textsize_16"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_arrive_time"
+        app:layout_constraintLeft_toRightOf="@+id/view_solid_point_2"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3咸阳机场  T3" />
+
+    <View
+        android:layout_width="@dimen/D2"
+        android:layout_height="0dp"
+        android:background="@color/CE2E2E2"
+        app:layout_constraintBottom_toBottomOf="@+id/view_solid_point_2"
+        app:layout_constraintLeft_toLeftOf="@+id/view_solid_point_1"
+        app:layout_constraintRight_toRightOf="@+id/view_solid_point_1"
+        app:layout_constraintTop_toTopOf="@+id/view_solid_point_1" />
+
+    <LinearLayout
+        android:id="@+id/ll_journey_detail_flow_middle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/D22"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@+id/view_solid_point_1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_depart_airport">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/D30"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_airline_logo"
+                android:layout_width="@dimen/D13"
+                android:layout_height="@dimen/D13"
+                android:layout_marginEnd="@dimen/D4"
+                tools:src="@mipmap/icon_flight_time" />
+
+            <TextView
+                android:id="@+id/tv_airline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/C888888"
+                android:textSize="@dimen/common_textsize_11"
+                tools:text="春秋航空MU2224" />
+        </LinearLayout>
+
+
+        <include
+            android:id="@+id/ll_menelipsis"
+            layout="@layout/layout_flight_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/D14" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

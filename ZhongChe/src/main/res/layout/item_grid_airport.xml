@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f2"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/item_grid_airport_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECECEC"
+        android:gravity="center|left"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/color3"
+        android:textSize="@dimen/item_title_size"/>
+    <com.neusoft.zcapplication.widget.DefinedGridView
+        android:id="@+id/item_grid_airport_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:horizontalSpacing="8dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:verticalSpacing="10dp"/>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/CFFFFFF"
+    tools:showIn="@layout/activity_internation_flight_list">
+
+    <TextView
+        android:id="@+id/tv_pre_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@mipmap/icon_left_arrow"
+        android:paddingLeft="@dimen/D17"
+        android:paddingTop="@dimen/D10"
+        android:paddingBottom="@dimen/D10"
+        android:text="前一天"
+        android:textColor="@color/C333333"
+        android:textSize="@dimen/common_textsize_12" />
+
+    <LinearLayout
+        android:id="@+id/ll_select_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/D8"
+        android:layout_marginBottom="@dimen/D8"
+        android:background="@drawable/shape_rectangle_cf5f5f5_r15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/D13"
+        android:paddingTop="@dimen/D8"
+        android:paddingRight="@dimen/D13"
+        android:paddingBottom="@dimen/D8">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_calendar"
+            android:drawablePadding="@dimen/D5"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/C333333"
+            android:textSize="@dimen/common_textsize_12"
+            tools:text="1232222" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/D5"
+            android:drawableRight="@mipmap/icon_arrow_down"
+            android:drawablePadding="@dimen/D10"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/C333333"
+            android:textSize="@dimen/common_textsize_12"
+            tools:text="11122222" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_next_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableRight="@mipmap/icon_right_arrow"
+        android:paddingTop="@dimen/D10"
+        android:paddingRight="@dimen/D17"
+        android:paddingBottom="@dimen/D10"
+        android:text="后一天"
+        android:textColor="@color/C333333"
+        android:textSize="@dimen/common_textsize_12" />
+</RelativeLayout>

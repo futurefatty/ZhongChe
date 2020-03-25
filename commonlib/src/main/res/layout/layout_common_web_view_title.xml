@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comm_title_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/CC70019"
+    android:minHeight="?attr/actionBarSize"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/comm_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/D10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/D30"
+                android:layout_height="@dimen/D30"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_white_back" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/comm_title_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/D10"
+            android:paddingRight="@dimen/D10"
+            android:paddingBottom="@dimen/D10"
+            android:text="关闭"
+            android:textColor="@color/CFFFFFF"
+            android:textSize="@dimen/common_textsize_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/comm_title_back"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/comm_title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/D10"
+            android:layout_marginRight="@dimen/D10"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/CFFFFFF"
+            android:textSize="@dimen/common_textsize_15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="A题标题标题标题标题A题标题" />
+
+
+        <FrameLayout
+            android:id="@+id/comm_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/D17"
+            android:paddingTop="@dimen/D5"
+            android:paddingRight="@dimen/D17"
+            android:paddingBottom="@dimen/D5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/comm_title_right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/CFFFFFF"
+                android:textSize="@dimen/common_textsize_16"
+                tools:text="有标题" />
+
+            <ImageView
+                android:id="@+id/comm_title_right_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                tools:src="@mipmap/icon_white_back" />
+        </FrameLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_hor_line_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/C888888"
+        android:textSize="@dimen/common_textsize_12"
+        tools:text="舱    位：" />
+
+
+    <TextView
+        android:id="@+id/tv_hor_line_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/D15"
+        android:lineSpacingExtra="@dimen/D5"
+        android:textColor="@color/C888888"
+        android:textSize="@dimen/common_textsize_12"
+        tools:text="起飞前2小时前改期手续费按票面价收取30#，起飞前2小时后收取50%不能签转
+                        " />
+</LinearLayout>

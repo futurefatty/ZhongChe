@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".flight.internation.InternationJourneyDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/D8"
+                android:layout_marginTop="@dimen/D10"
+                android:layout_marginRight="@dimen/D8"
+                android:background="@drawable/shape_rectangle_cffffff_r_4"
+                android:orientation="vertical">
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/D15"
+                    android:layout_marginTop="@dimen/D19"
+                    android:layout_marginRight="@dimen/D15">
+
+
+                    <TextView
+                        android:id="@+id/tv_journey_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/C333333"
+                        android:textSize="@dimen/common_textsize_15"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="5月22 周三" />
+
+                    <TextView
+                        android:id="@+id/tv_journey_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/icon_flight_time"
+                        android:drawablePadding="@dimen/D5"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/C333333"
+                        android:textSize="@dimen/common_textsize_14"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_journey_date"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tv_journey_date"
+                        tools:text="123" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycle_joureny_flow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/D25"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_journey_date" />
+                </android.support.constraint.ConstraintLayout>
+
+
+                <com.crcc.commonlib.view.DashView
+                    android:id="@+id/dash_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/D8"
+                    android:layout_marginTop="@dimen/D18"
+                    android:layout_marginRight="@dimen/D8"
+                    sy:dashWidth="@dimen/D2"
+                    sy:lineColor="@color/CE2E2E2"
+                    sy:lineHeight="@dimen/D1"
+                    sy:lineWidth="@dimen/D4" />
+
+                <LinearLayout
+                    android:id="@+id/ll_joureny_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/D15"
+                    android:layout_marginRight="@dimen/D15"
+                    android:orientation="vertical" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/D14"
+                    android:background="@color/CE2E2E2" />
+
+
+                <TextView
+                    android:id="@+id/tv_refund_change_explain"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/D44"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/D15"
+                    android:paddingRight="@dimen/D15"
+                    android:text="退改签及行李额说明 >"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/common_textsize_12" />
+            </LinearLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/D8"
+                android:layout_marginTop="@dimen/D10"
+                android:layout_marginRight="@dimen/D8"
+                android:background="@drawable/shape_rectangle_cffffff_r_4"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/D15"
+                android:paddingRight="@dimen/D15"
+                android:paddingBottom="@dimen/D10">
+
+                <TextView
+                    android:id="@+id/tv_cost_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/D20"
+                    android:text="费用明细"
+                    android:textColor="@color/C333333"
+                    android:textSize="@dimen/common_textsize_16"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_fee_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/D25"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cost_detail_title" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总计"
+                    android:textColor="@color/C333333"
+                    android:textSize="@dimen/common_textsize_13"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_total_price"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_total_price" />
+
+                <TextView
+                    android:id="@+id/tv_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/D33"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/common_textsize_24"
+                    android:textStyle="bold"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_fee_detail"
+                    tools:text="760" />
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/D17"
+                android:layout_marginBottom="@dimen/D62"
+                android:gravity="center"
+                android:text="*页面展示均为参考方案，实际飞行方案以服务商提供为准"
+                android:textColor="@color/C333333"
+                android:textSize="@dimen/common_textsize_12" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_select_program"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/D48"
+        android:layout_gravity="bottom"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="选为参考"
+        android:textColor="@color/CFFFFFF"
+        android:textSize="@dimen/common_textsize_14" />
+</FrameLayout>

@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">时代商旅</string>
+
+    <string name="main_tab_home">首页</string>
+    <string name="main_tab_approval">预订申请</string>
+    <string name="main_tab_price">航班动态</string>
+    <string name="main_tab_world">值机改签</string>
+    <string name="main_tab_mine">我的</string>
+    <string name="text_login">点 击 登 录</string>
+    <string name="text_today">今天</string>
+
+    <string name="remind">行程</string>
+    <string name="personal_info">个人资料</string>
+    <string name="mine_order">我的订单</string>
+    <string name="mine_xc_order">携程订单</string>
+    <string name="mine_credentials_order">证件维护</string>
+    <string name="commonly_used_info">常用信息</string>
+    <string name="to_be_done">我的待办</string>
+    <string name="poi_city">城市检索</string>
+    <string name="authorization">我的授权</string>
+    <string name="custom_service">我的客服</string>
+    <string name="visa">签证</string>
+    <string name="suggest">意见与反馈</string>
+    <string name="qr_code">App二维码</string>
+    <string name="hotel_order_detail">订单详情</string>
+    <string name="credentials">证件维护</string>
+    <string name="add_credentials">添加证件</string>
+    <string name="about">关于我们</string>
+    <string name="setting">设置</string>
+    <string name="copy">复制</string>
+    <string name="data_analyze">数据报表</string>
+    <string-array name="TabTitle">
+        <item>单程</item>
+        <item>往返</item>
+    </string-array>
+    <string-array name="CitiesTabTitle">
+        <item>国内</item>
+        <item>国际/港澳台</item>
+    </string-array>
+
+    <string name="edit">编辑</string>
+    <string name="save">保存</string>
+    <string name="nickname">姓名</string>
+    <string name="gender">性别</string>
+    <string name="birthday">生日</string>
+    <string name="address">详细地址</string>
+    <string name="mobile">绑定手机</string>
+    <string name="email">邮箱</string>
+
+    <string name="add_passenger">  新增常用旅客</string>
+    <string name="add_reimburse_voucher">  新增报销凭证抬头</string>
+    <string name="add_visa">  新增签证信息</string>
+    <string name="title_order_detail">订单详情</string>
+
+    <string name="tst_handle_success">操作成功</string>
+    <string name="tst_handle_fail">操作失败</string>
+    <string name="tst_handle_error">操作失败</string>
+
+    <string name="tst_get_success">获取数据成功</string>
+    <string name="tst_get_fail">获取数据失败</string>
+    <string name="tst_get_error">没有获取到相关数据</string>
+    <string name="tst_get_no_data">暂时没有符合条件的结果~</string>
+    <string name="policy_str">公司差旅政策：\n1、国内机票请提前3天预定，国际机票请提前15天预定；\n2、出行前后1小时内请选择最低折扣航班；\n3、请优先选择协议航司。</string>
+
+    <string-array name="weekAry">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string name="not_wifi_toast">你现在不在无线局域网环境，是否继续?</string>
+    <!--差旅信息-->
+    <string name="rule_employee_level1">院士、株洲\n所董事长、\n株洲所总经\n理、株洲所\n党委书记、\nT层级员工</string>
+    <string name="rule_trip_type1">飞机:公务舱及以下\n轮船:一等舱及以下\n火车:软席(软座、软卧)及以下\n动车(高铁):一等座、卧铺及以下\n全列软席列车:一等软座及以下\n汽车:长途大巴、中巴</string>
+    <string name="rule_hotel_level1">限额标准:\n主要城市:1000元\n其他城市:800元</string>
+
+    <string name="rule_employee_level2">株洲所其他\n负责人、A1\n层级员工</string>
+    <string name="rule_trip_type2">飞机:经济舱\n轮船:二等舱及以下\n火车:软席(软座、软卧)及以下\n动车(高铁):一等座、卧铺及以下\n全列软席列车:一等软座及以下</string>
+    <string name="rule_hotel_level2">限额标准:\n主要城市:1000元\n其他城市:800元</string>
+
+    <string name="rule_employee_level3">A2层级员工</string>
+    <string name="rule_trip_type3">飞机:经济舱\n轮船:二等舱及以下\n火车:软席及以下\n动车(高铁):一等座、卧铺及以下\n全列软席列车:二等软座及以下\n汽车:长途大巴、中巴</string>
+    <string name="rule_hotel_level3">限额标准:\n主要城市:800元\n其他城市:600元</string>
+
+    <string name="rule_employee_level4">B层级员工</string>
+    <string name="rule_trip_type4">飞机:经济舱\n轮船:二等舱及以下\n火车:软席(软座、软卧)及以下\n动车(高铁):一等座、卧铺及以下\n全列软席列车:二等软座及以下\n汽车:长途大巴、中巴</string>
+    <string name="rule_hotel_level4">限额标准:\n主要城市:600元\n其他城市:450元</string>
+
+    <string name="rule_employee_level5">C层级员工</string>
+    <string name="rule_trip_type5">飞机:经济舱\n轮船:三等舱及以下\n火车:软席(软座、软卧)及以下\n动车(高铁):二等座、卧铺及以下\n全列软席列车:二等软座及以下\n汽车:长途大巴、中巴</string>
+    <string name="rule_hotel_level5">包干标准:\n主要城市:400元\n其他城市:350元</string>
+
+    <string name="rule_employee_level6">其他员工</string>
+    <string name="rule_trip_type6">飞机:经济舱(事前批准)\n轮船:三等舱及以下\n火车:硬卧及以下\n动车(高铁):二等座、卧铺及以下\n全列软席列车:二等软座及以下\n汽车:长途大巴、中巴</string>
+    <string name="rule_hotel_level6">包干标准:\n主要城市:400元\n其他城市:350元</string>
+
+    <string name="setup_gesture_code">设置手势密码</string>
+    <string name="setup_gesture_pattern">绘制解锁图案</string>
+    <string name="setup_gesture_pattern_again">再次绘制解锁图案</string>
+    <string name="forget_gesture_code">忘记手势密码?</string>
+    <string name="use_other_account_login">用其他账号登录</string>
+    <string name="set_gesture_pattern">请绘制手势密码</string>
+    <string name="set_gesture_pattern_reason">设置手势密码，防止他人未经授权查看</string>
+    <string name="reset_gesture_code">重新绘制手势密码</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

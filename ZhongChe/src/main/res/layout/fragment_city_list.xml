@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_city_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_dialog"
+        android:layout_width="@dimen/D80"
+        android:layout_height="@dimen/D80"
+        android:layout_gravity="center"
+        android:background="#ECECEC"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/common_textsize_30"
+        android:visibility="invisible" />
+
+    <com.neusoft.zcapplication.widget.SideBar
+        android:id="@+id/side_bar"
+        android:layout_width="@dimen/D30"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center"
+        sy:nomalTextColor="@color/C999999"
+        sy:selectTextColor="@color/colorPrimary"
+        sy:textSize="11sp" />
+</FrameLayout>

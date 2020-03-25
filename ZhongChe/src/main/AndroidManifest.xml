@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.neusoft.zcapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 允许程序访问额外的定位提供者指令获取模拟定位信息 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:name=".base.ZcApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Calendar.PreCalendarActivity" /> <!-- 入口 -->
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ShowViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.journey.JourneyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.personalinfo.PersonalInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.personalinfo.EditPersonalInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.mostusedinfo.MostUsedInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.mostusedinfo.AddPassengerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".mine.mostusedinfo.AddReimburseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.mostusedinfo.AddVisaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.order.OrderActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.order.FlightSchemesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.order.FlightSchemes2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.order.SendCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.backlog.BacklogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.backlog.BacklogNewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.backlog.BacklogDealActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.SuggestAndFeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".visa.VisaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".visa.VisaHelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.customservice.CustomServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.authorization.AuthorizationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.authorization.AuthorizationSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".city.AirportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".OthersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TicketService.TicketServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HotelService.HotelServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtherService.OtherServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".approval.EditChuXinRenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.personalinfo.ChangePasswordActivity"
+            android:screenOrientation="portrait" /> <!-- 新建预定申请单 -->
+        <activity
+            android:name=".approval.ApprovalActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".HotelService.TaxInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HotelService.AddTaxInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HotelService.TaxDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShowViewForNonBusinessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CarService.CarServiceActivity"
+            android:screenOrientation="portrait" /> <!-- 证件列表 -->
+        <activity
+            android:name=".mine.CredentialsActivity"
+            android:screenOrientation="portrait" /> <!-- 证件详情编辑页 -->
+        <activity
+            android:name=".mine.CredentialsDetailActivity"
+            android:screenOrientation="portrait" /> <!-- 国内机票订单详情页 -->
+        <activity
+            android:name=".mine.order.InternalOrderDetailActivity"
+            android:screenOrientation="portrait" /> <!-- 日历 -->
+        <activity
+            android:name=".Calendar.CalendarActivity"
+            android:screenOrientation="portrait" /> <!-- 创建预定申请单界面（国际有往返数据） -->
+        <activity
+            android:name=".approval.NewApprovalActivity"
+            android:screenOrientation="portrait" /> <!-- 确认酒店入住信息列表界面 -->
+        <activity
+            android:name=".HotelService.HotelListQueryActivity"
+            android:screenOrientation="portrait" /> <!-- 二维码界面 -->
+        <activity
+            android:name=".mine.AppQrCodeActivity"
+            android:screenOrientation="portrait" /> <!-- 常见问题界面 -->
+        <activity
+            android:name=".home.QuestionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!-- 酒店订单详情 -->
+        <activity
+            android:name=".mine.order.HotelOrderDetailActivity"
+            android:screenOrientation="portrait" /> <!-- 差旅标准 -->
+        <activity
+            android:name=".HotelService.RuleActivity"
+            android:screenOrientation="portrait" /> <!-- 设置手势密码界面 -->
+        <activity
+            android:name=".gestureLock.GestureEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gestureLock.GestureVerifyActivity"
+            android:screenOrientation="portrait" /> <!-- 查询机票信息界面 -->
+        <activity
+            android:name=".TicketService.SearchFlightTicketActivity"
+            android:screenOrientation="portrait" /> <!-- 常用旅客信息 -->
+        <activity
+            android:name=".mine.mostusedinfo.PassengerActivity"
+            android:screenOrientation="portrait" /> <!-- 周边地址搜索 -->
+        <activity
+            android:name=".home.PoiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtherService.CtripActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.PersonalTripActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.backlog.BusinessCarVerifyDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".mine.backlog.BusinessCarHandleDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.backlog.BusinessCarChoseSupplierActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CarService.BusinessCarApplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CarService.BusinessCarApplyDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CarService.BusinessCarApplyCreateOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ApplyAdvanceOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtherService.DataReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TicketService.PrivateInternationalApplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TicketService.PrivateInternationalApplyCreateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".HotelApplyAdvanceOrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtherService.TravelProductActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".OtherService.TravelProductDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.SuggestAndFeedbackRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.SuggestAndFeedbackRecordDetailActivity"
+            android:screenOrientation="portrait" /> <!-- 7.0后的系统安装apk的时候，需要通过这种方式来使用第三方应用的数据 -->
+        <!-- 高德地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="931c1a53b34146d7c374a7799271094a" />
+
+        <activity
+            android:name="com.amap.api.navi.AmapRouteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name=".TbsActivity" />
+        <activity android:name=".home.NoticeListActivity" />
+        <activity android:name=".DataAnalyzeActivity" />
+        <activity android:name=".calendarList.CalendarListActivity" />
+        <activity
+            android:name=".flight.FlightCityActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThisTheme" />
+        <activity
+            android:name=".flight.internation.InternationJourneyDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThisTheme" />
+        <activity
+            android:name=".flight.internation.InternationFlightListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThisTheme" />
+        <activity
+            android:name=".flight.inland.InlandFlightOrderDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!--Test-->
+        <activity android:name=".TestActivity">
+
+        </activity>
+    </application>
+
+</manifest>

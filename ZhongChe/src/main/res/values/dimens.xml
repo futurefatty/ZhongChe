@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="borderWidth">2px</dimen>s
+    <dimen name="tabBorderWidth">2dp</dimen>
+    <dimen name="tabBorderSingleWidth">1dp</dimen>
+    <dimen name="size30px">12sp</dimen>
+    <dimen name="tab_img_size" >24dp</dimen>
+
+    <!--输入框前面图片的尺寸-->
+    <dimen name="icon_front_edit_height">30dp</dimen>
+    <dimen name="icon_front_edit_width">30dp</dimen>
+
+    <dimen name="horizontal_margin">10dp</dimen>
+    <dimen name="edit_text_padding">5dp</dimen>
+    <dimen name="settingTextSize">14sp</dimen>
+    <dimen name="settingTextSizePx">28px</dimen>
+
+    <dimen name="icon_head_size">60dp</dimen>
+
+    <!-- 我的页面，字体与左边图标间距 -->
+    <dimen name="margin_left_title_with_icon">15dp</dimen>
+
+    <!--<dimen name="cols_text_size">32px</dimen>-->
+    <dimen name="cols_text_size">14sp</dimen>
+    <!--<dimen name="cols_small_text_size">28px</dimen>-->
+    <dimen name="cols_small_text_size">12sp</dimen>
+    <dimen name="edit_padding">12dp</dimen>
+    <dimen name="edit_margin_top">20dp</dimen>
+
+    <dimen name="titleBar_btn_textSize">36px</dimen>
+    <dimen name="titleBar_title_textSize">40px</dimen>
+    <dimen name="titleBar_title_textSize_sp">16sp</dimen>
+
+    <dimen name="icon_add_size">20dp</dimen>
+    <dimen name="btn_add_paddingV">8dp</dimen>
+    <dimen name="btn_add_paddingH">13dp</dimen>
+    <dimen name="btn_cancel_paddingV">3dp</dimen>
+    <dimen name="btn_cancel_paddingH">15dp</dimen>
+
+    <dimen name="cols_paddingL">12dp</dimen>
+    <dimen name="cols_paddingT">15dp</dimen>
+    <dimen name="cols_paddingB">8dp</dimen>
+
+    <dimen name="marginTop5dp">5dp</dimen>
+
+    <dimen name="icon_arrow_right_W">7dp</dimen>
+    <dimen name="icon_arrow_right_H">15dp</dimen>
+
+    <dimen name="size10sp">10sp</dimen>
+    <dimen name="size12sp">12sp</dimen>
+    <dimen name="size13sp">13sp</dimen>
+    <dimen name="size14sp">14sp</dimen>
+    <dimen name="size16sp">16sp</dimen>
+    <dimen name="size18sp">18sp</dimen>
+    <dimen name="size20sp">20sp</dimen>
+
+    <dimen name="item_title_size">14sp</dimen>
+
+    <dimen name="save_btn_marginTop">4dp</dimen>
+
+    <dimen name="backlog_padding">12dp</dimen>
+    <dimen name="common_textsize_9">9sp</dimen>
+</resources>

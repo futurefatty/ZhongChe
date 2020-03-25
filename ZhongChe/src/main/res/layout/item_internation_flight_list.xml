@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rectangle_cffffff_r_4"
+    android:paddingLeft="@dimen/D12"
+    android:paddingTop="@dimen/D15"
+    android:paddingRight="@dimen/D12"
+    android:paddingBottom="@dimen/D13">
+
+
+    <TextView
+        android:id="@+id/tv_depart_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textColor="@color/C333333"
+        android:textSize="@dimen/common_textsize_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="06:10" />
+
+
+    <TextView
+        android:id="@+id/tv_depart_airline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/D6"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="@color/C666666"
+        android:textSize="@dimen/common_textsize_12"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_depart_time"
+        app:layout_constraintTop_toBottomOf="@+id/tv_depart_time"
+        tools:text="萧山机场T3萧山机场T3萧山机场T3萧山机场T3" />
+
+    <ImageView
+        android:id="@+id/iv_point_to_line"
+        android:layout_width="@dimen/D52"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/D17"
+        android:layout_marginRight="@dimen/D21"
+        android:src="@mipmap/icon_point_to_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_depart_airline"
+        app:layout_constraintLeft_toRightOf="@+id/tv_depart_airline"
+        app:layout_constraintTop_toTopOf="@+id/tv_depart_time" />
+
+    <TextView
+        android:id="@+id/tv_point_to_arrow_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/CFFFFFF"
+        android:paddingLeft="@dimen/D4"
+        android:paddingRight="@dimen/D4"
+        android:textColor="@color/C333333"
+        android:textSize="@dimen/common_textsize_9"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_depart_airline"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_point_to_line"
+        app:layout_constraintRight_toRightOf="@+id/iv_point_to_line"
+        app:layout_constraintTop_toTopOf="@+id/tv_depart_time"
+        tools:text="中转" />
+
+
+    <TextView
+        android:id="@+id/tv_point_to_arrow_below"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/D2"
+        android:background="@color/CFFFFFF"
+        android:includeFontPadding="false"
+        android:paddingLeft="@dimen/D4"
+        android:paddingRight="@dimen/D4"
+        android:textColor="@color/C333333"
+        android:textSize="@dimen/common_textsize_9"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_point_to_line"
+        app:layout_constraintRight_toRightOf="@+id/iv_point_to_line"
+        app:layout_constraintTop_toBottomOf="@+id/tv_point_to_arrow_middle"
+        tools:text="中转" />
+
+
+    <TextView
+        android:id="@+id/tv_arrive_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/D20"
+        android:includeFontPadding="false"
+        android:textColor="@color/C333333"
+        android:textSize="@dimen/common_textsize_20"
+        app:layout_constraintLeft_toRightOf="@+id/iv_point_to_line"
+        app:layout_constraintTop_toTopOf="@+id/tv_depart_time"
+        tools:text="14:10" />
+
+    <TextView
+        android:id="@+id/tv_tomorrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/D4"
+        android:layout_marginTop="@dimen/D3"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/common_textsize_10"
+        app:layout_constraintLeft_toRightOf="@+id/tv_arrive_time"
+        app:layout_constraintTop_toTopOf="@+id/tv_arrive_time"
+        tools:text="1天" />
+
+    <TextView
+        android:id="@+id/tv_arrive_airline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/D6"
+        android:includeFontPadding="false"
+        android:textColor="@color/C666666"
+        android:textSize="@dimen/common_textsize_12"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_arrive_time"
+        app:layout_constraintTop_toBottomOf="@+id/tv_arrive_time"
+        tools:text="萧山机场T3" />
+
+
+    <TextView
+        android:id="@+id/tv_price_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="￥"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/common_textsize_12"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_price"
+        app:layout_constraintRight_toLeftOf="@+id/tv_price" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/common_textsize_20"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_arrive_time"
+        tools:text="20" />
+
+
+    <TextView
+        android:id="@+id/tv_price_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="含税总价"
+        android:textColor="@color/C888888"
+        android:textSize="@dimen/common_textsize_11"
+        app:layout_constraintRight_toRightOf="@id/tv_price"
+        app:layout_constraintTop_toTopOf="@+id/tv_arrive_airline" />
+
+    <TextView
+        android:id="@+id/tv_look"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/D7"
+        android:background="@drawable/shape_rectangle_cc70019_r2"
+        android:gravity="center"
+        android:paddingLeft="@dimen/D19"
+        android:paddingTop="@dimen/D7"
+        android:paddingRight="@dimen/D19"
+        android:paddingBottom="@dimen/D7"
+        android:text="查看"
+        android:textColor="@color/CFFFFFF"
+        app:layout_constraintRight_toRightOf="@+id/tv_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_arrive_airline" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/D10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@+id/tv_look">
+
+        <ImageView
+            android:id="@+id/iv_airline_logo"
+            android:layout_width="@dimen/D13"
+            android:layout_height="@dimen/D13"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_airline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/D2"
+            android:textColor="@color/C888888"
+            android:textSize="@dimen/common_textsize_12"
+            tools:text="东方航空...等" />
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(共享)"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/common_textsize_12"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/tv_vertical_line"
+            android:layout_width="1px"
+            android:layout_height="@dimen/D10"
+            android:layout_marginLeft="@dimen/D12"
+            android:layout_marginRight="@dimen/D10"
+            android:background="@color/CB2B2B2" />
+
+        <TextView
+            android:id="@+id/tv_flight_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_flight_time"
+            android:drawablePadding="@dimen/D5"
+            android:gravity="center_vertical"
+            android:textColor="@color/C888888"
+            android:textSize="@dimen/common_textsize_12"
+            tools:text="8h25m" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/divider_line"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/exp_child_tran_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/size12sp"
+        android:visibility="gone"/>
+    <!-- 可折叠部分 -->
+    <LinearLayout
+        android:id="@+id/ly_go_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_light_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+            <!-- 第1列 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/localtime_border"
+                    android:padding="1dp"
+                    android:text="当地时间"
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/size10sp" />
+                <TextView
+                    android:id="@+id/exp_child_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mine_item_color"
+                    android:textSize="@dimen/size14sp" />
+                <TextView
+                    android:id="@+id/exp_child_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mine_item_color"
+                    android:textSize="@dimen/size20sp" />
+
+                <TextView
+                    android:id="@+id/exp_child_start_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/exp_child_dpt_airport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/size12sp" />
+            </LinearLayout>
+            <!-- 第2列 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/exp_child_flight_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/size12sp" />
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_arrow_long_gray" />
+
+                <TextView
+                    android:id="@+id/exp_child_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/size12sp" />
+            </LinearLayout>
+            <!-- 第3列 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/localtime_border"
+                    android:padding="1dp"
+                    android:text="当地时间"
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/size10sp" />
+                <TextView
+                    android:id="@+id/exp_child_end_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mine_item_color"
+                    android:textSize="@dimen/size14sp" />
+                <TextView
+                    android:id="@+id/exp_child_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mine_item_color"
+                    android:textSize="@dimen/size20sp" />
+
+                <TextView
+                    android:id="@+id/exp_child_des_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/exp_child_des_airport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/size12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

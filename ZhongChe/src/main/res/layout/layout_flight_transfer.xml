@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:visibility="visible"
+    tools:showIn="@layout/item_journey_detail_flow_1">
+
+    <View
+        android:layout_width="@dimen/D9"
+        android:layout_height="@dimen/D9"
+        android:background="@drawable/shape_circle_stork_ce2e2e2_size_9" />
+
+    <com.crcc.commonlib.view.DashView
+        android:id="@+id/dash_view"
+        android:layout_width="@dimen/D22"
+        android:layout_height="wrap_content"
+        sy:dashWidth="@dimen/D2"
+        sy:lineColor="@color/CE2E2E2"
+        sy:lineHeight="@dimen/D2"
+        sy:lineWidth="@dimen/D2" />
+
+
+    <TextView
+        android:id="@+id/tv_menelipsis"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/D24"
+        android:background="@color/CEFEFEF"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/D10"
+        android:textColor="@color/C333333"
+        android:textSize="@dimen/common_textsize_11"
+        tools:text="经停  信阳   1小时40分" />
+</LinearLayout>

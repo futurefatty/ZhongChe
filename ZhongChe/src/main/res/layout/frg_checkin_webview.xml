@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_gray">
+
+    <WebView
+        android:id="@+id/wv_checkin_servie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+    <!-- 页面加载失败 -->
+    <RelativeLayout
+        android:id="@+id/load_fail_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/titleBarColorWhite"
+        android:clickable="true"
+        android:gravity="center"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/content_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="100dp"
+            android:paddingTop="50dp">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/pic_status_nointernet" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="无法链接网络"
+                android:textColor="@color/light_gray"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="请点击屏幕重试"
+                android:textColor="@color/light_gray"
+                android:textSize="18dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
