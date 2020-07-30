@@ -111,7 +111,7 @@ public class ApplyOrderListAdapter extends BaseAdapter{
         String userNameStr = null == item.get("empName")? "" : item.get("empName").toString();//乘机人
         String fromCity = null == item.get("fromCity")?"" : item.get("fromCity").toString();
         String toCity = null == item.get("toCity")?"" : item.get("toCity").toString();
-        String approval = "".equals(item.get("leaderName"))?"" : item.get("leaderName").toString();
+        String approval = null ==item.get("leaderName")?"" : item.get("leaderName").toString();
         String state = null == item.get("approveState") ? "" : item.get("approveState").toString();//订单审批状态
         if (null!=state&&state.equals("0.0")){
             state = "审批不通过";

@@ -961,7 +961,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="10dp"
                                 android:paddingBottom="10dp"
-                                android:text="angel@shinetour.com"
+                                android:text="angel@meiya.com"
                                 android:textColor="#666666"
                                 android:textSize="@dimen/size12sp" />
                         </LinearLayout>
@@ -990,7 +990,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
-                            android:text="国际联系客服(24小时):+8620-22830800"
+                            android:text="国际联系客服(24小时):+0086-20-22504088"
                             android:textColor="#666666"
                             android:textSize="@dimen/size12sp" />
 

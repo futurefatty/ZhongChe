@@ -208,28 +208,31 @@ public class AllOrderFragment extends BaseFragment implements View.OnClickListen
 //                        startActivityForResult(intent,1001);
 //                    }
 
-                    Intent intent = new Intent(getActivity(), FlightSchemesActivity.class);
-                    Map<String, Object> map = outAdapter.getList().get(position);
-//                    double supplerId = null == map.get("SUPPLIERID") ? -1.0 :(double)map.get("SUPPLIERID");//供应商id
-//                    int supplerIdInt = (int) supplerId;
-                    String combineId = null == map.get("COMBINEID") ? "" : map.get("COMBINEID").toString();//国际机票订单综合编号
-                    String applicantId = null == map.get("applicateId") ? "" : map.get("applicateId").toString();//提交该申请单的用户的员工编号
-
-                    double isBuy = null == map.get("isBuy") ? 0.0 : (double) map.get("isBuy");//供应商id
-                    int isBuyInt = (int) isBuy;
-                    double type = null == map.get("type") ? 1.0 : (double) map.get("type");//
-                    int typeInt = (int) type;
-                    String orderStateName = null == map.get("ORDERSTATENAME") ? "" : map.get("ORDERSTATENAME").toString();
-
-                    intent.putExtra("combineId", combineId);
-//                    intent.putExtra("supplerId", "-1");//这里没有供应商id，可不传，默认为-1
-                    intent.putExtra("applicantId", applicantId);
-                    intent.putExtra("isBuy", isBuyInt);
-                    intent.putExtra("type", typeInt);
-                    intent.putExtra(FlightSchemesActivity.IS_ORDER_APPLY, true);
-                    intent.putExtra("orderStateName", orderStateName);
-                    startActivityForResult(intent, 1001);
-
+//1001                    Intent intent = new Intent(getActivity(), FlightSchemesActivity.class);
+//                    Map<String, Object> map = outAdapter.getList().get(position);
+////                    double supplerId = null == map.get("SUPPLIERID") ? -1.0 :(double)map.get("SUPPLIERID");//供应商id
+////                    int supplerIdInt = (int) supplerId;
+//                    String combineId = null == map.get("COMBINEID") ? "" : map.get("COMBINEID").toString();//国际机票订单综合编号
+//                    String applicantId = null == map.get("applicateId") ? "" : map.get("applicateId").toString();//提交该申请单的用户的员工编号
+//
+//                    double isBuy = null == map.get("isBuy") ? 0.0 : (double) map.get("isBuy");//供应商id
+//                    int isBuyInt = (int) isBuy;
+//                    double type = null == map.get("type") ? 1.0 : (double) map.get("type");//
+//                    int typeInt = (int) type;
+//                    String orderStateName = null == map.get("ORDERSTATENAME") ? "" : map.get("ORDERSTATENAME").toString();
+//
+//                    intent.putExtra("combineId", combineId);
+////                    intent.putExtra("supplerId", "-1");//这里没有供应商id，可不传，默认为-1
+//                    intent.putExtra("applicantId", applicantId);
+//                    intent.putExtra("isBuy", isBuyInt);
+//                    intent.putExtra("type", typeInt);
+//                    intent.putExtra(FlightSchemesActivity.IS_ORDER_APPLY, true);
+//                    intent.putExtra("orderStateName", orderStateName);
+//                    startActivityForResult(intent, 1001);
+                    Map<String, Object> map = outAdapter.getItem(position);
+                    Bundle bundle = new Bundle();
+                    bundle.putSerializable("map", (Serializable) map);
+                    startActivity(ApplyAdvanceOrderDetailActivity.class, bundle);
                 }
             }
         });

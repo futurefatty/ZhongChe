@@ -706,14 +706,14 @@ public class ApprovalActivity extends BaseActivity implements View.OnClickListen
     public void selectTripMode(int position) {
         city_position = position;
         List<FlightItem> list = adapter.getList();
-        if (selectTripType != null && list.get(city_position).getTripMode() != null) {
-            LinearLayout ly_main = (LinearLayout) findViewById(R.id.ly_main);
-            window.update();
-            popOutShadow(window);
-            window.showAtLocation(ly_main, Gravity.CENTER, 0, 0);
-        } else {
-            getTripType();
-        }
+//        if (selectTripType != null && list.get(city_position).getTripMode() != null) {
+//            LinearLayout ly_main = (LinearLayout) findViewById(R.id.ly_main);
+//            window.update();
+//            popOutShadow(window);
+//            window.showAtLocation(ly_main, Gravity.CENTER, 0, 0);
+//        } else {
+        getTripType();
+//        }
     }
 
     PopupWinListAdapter popAdapter;
@@ -2371,6 +2371,8 @@ public class ApprovalActivity extends BaseActivity implements View.OnClickListen
         LinearLayout suggestLayout = (LinearLayout) findViewById(R.id.frg_approval_suggest_layout); //国际航程建议
 
         LinearLayout is_ipd_switch_ll = (LinearLayout) findViewById(R.id.is_ipd_switch_ll);
+        LinearLayout is_ipd_ll = (LinearLayout) findViewById(R.id.is_ipd_ll);
+        Switch is_ipd_switch = (Switch) findViewById(R.id.is_ipd_switch);
         if (tabIndex == 0) {
             //显示国内机票申请单
             cursor1.setVisibility(View.VISIBLE);
@@ -2388,6 +2390,8 @@ public class ApprovalActivity extends BaseActivity implements View.OnClickListen
             supplierView.setVisibility(View.GONE);
             //是否显示国内机票时的IPD开关
             is_ipd_switch_ll.setVisibility(View.VISIBLE);
+            is_ipd_ll.setVisibility(View.GONE);
+            is_ipd_switch.setChecked(false);
         } else if (tabIndex == 1) {
             //显示国际机票申请单
             //下标
@@ -2406,6 +2410,8 @@ public class ApprovalActivity extends BaseActivity implements View.OnClickListen
             supplierView.setVisibility(View.GONE);
             //是否显示国际机票时的IPD开关
             is_ipd_switch_ll.setVisibility(View.VISIBLE);
+            is_ipd_ll.setVisibility(View.GONE);
+            is_ipd_switch.setChecked(false);
         } else {
             //显示国内酒店申请单
             cursor1.setVisibility(View.INVISIBLE);
@@ -2423,6 +2429,8 @@ public class ApprovalActivity extends BaseActivity implements View.OnClickListen
             supplierView.setVisibility(View.GONE);
             //是否显示国内酒店时的IPD开关
             is_ipd_switch_ll.setVisibility(View.GONE);
+            is_ipd_ll.setVisibility(View.GONE);
+            is_ipd_switch.setChecked(false);
         }
     }
 

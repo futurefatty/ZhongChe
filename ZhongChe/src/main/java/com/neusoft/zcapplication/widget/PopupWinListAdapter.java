@@ -155,8 +155,19 @@ public class PopupWinListAdapter extends BaseAdapter {
             holder.ipd_line.setVisibility(View.VISIBLE);
             holder.item_name.setText("项目名称:　" + item.get("projName") + "");
             holder.item_department.setText("任务名称:　" + item.get("taskName") + "");
-            holder.ipd_pmCode.setText(item.get("pmCode") + "");
-            holder.ipd_projName.setText("审批人:　　" + item.get("pmName") + "");
+            if (item.containsKey("approverName")) {
+                if (StringUtil.isEmpty(item.get("approverName").toString())) {
+                    holder.ipd_pmCode.setText(item.get("pmCode") + "");//出差任务审批人工号
+                    holder.ipd_projName.setText("审批人:　　" + item.get("pmName") + "");//出差任务审批人
+                } else {
+                    holder.ipd_pmCode.setText(item.get("approver") + "");//出差任务审批人工号
+                    holder.ipd_projName.setText("审批人:　　" + item.get("approverName"));//出差任务审批人
+                }
+            } else {
+                holder.ipd_pmCode.setText(item.get("pmCode") + "");//出差任务审批人工号
+                holder.ipd_projName.setText("审批人:　　" + item.get("pmName") + "");//出差任务审批人
+            }
+
         } else {//核算主体
             holder.item_name.setText(item.get("companyName") + "");
         }
