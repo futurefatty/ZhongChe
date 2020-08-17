@@ -3,10 +3,10 @@ ext {
             compileSdkVersion: 25,
             minSdkVersion    : 19,
             targetSdkVersion : 25,
-            versionCode      : 43,
-            versionName      : "3.3",
+            versionCode      : 44,
+            versionName      : "3.4",
     ]
-
+//打包时versionCode加1 versionName加1
     version = [
             androidSupportSdkVersion            : "25.3.1",
 
